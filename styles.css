@@ -1,7 +1,7 @@
 /* ============================================================
    Firm Foundation Flooring — demo site (Tier 1 "Clean Slate")
    Palette: warm oak plank · firm slate gray · clean ivory
-   Fonts: Chela One (display) + Noto Serif Hebrew (body)
+   Fonts: Suranna (display) + Anek Devanagari (body)
    Self-contained, runs from file:// — no build tools.
    ============================================================ */
 
@@ -33,10 +33,10 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family:"Noto Serif Hebrew",Georgia,"Times New Roman",serif;
+  font-family:"Anek Devanagari",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   color:var(--ink);
   background:var(--ivory);
-  line-height:1.7;
+  line-height:1.72;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -45,17 +45,17 @@ a{color:inherit;text-decoration:none}
 button{font-family:inherit}
 
 h1,h2,h3,h4{
-  font-family:"Chela One","Chela One",Georgia,serif;
-  line-height:1.05;
-  letter-spacing:0;
+  font-family:"Suranna",Georgia,"Times New Roman",serif;
+  line-height:1.12;
+  letter-spacing:.008em;
   margin:0;
   font-weight:400;
   color:var(--slate);
   text-wrap:balance;
 }
-h1{font-size:clamp(2.5rem,5.1vw,4rem);line-height:1.06}
+h1{font-size:clamp(2.55rem,5.1vw,4.05rem);line-height:1.1}
 h2{font-size:clamp(2.05rem,4.6vw,3.3rem)}
-h3{font-size:1.4rem;line-height:1.16}
+h3{font-size:1.42rem;line-height:1.2}
 h4{font-size:1.06rem}
 p{margin:0;text-wrap:pretty}
 
@@ -69,7 +69,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
   display:inline-flex;align-items:center;gap:.7em;
   text-transform:uppercase;letter-spacing:.2em;
   font-size:.74rem;font-weight:700;color:var(--oak-dark);margin-bottom:18px;
-  font-family:"Noto Serif Hebrew",serif;
+  font-family:"Anek Devanagari",sans-serif;
 }
 .eyebrow::before{content:"";width:28px;height:2px;border-radius:2px;background:var(--oak);display:inline-block}
 .eyebrow.light{color:var(--oak-soft)}
@@ -83,7 +83,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .btn{
   position:relative;overflow:hidden;
   display:inline-flex;align-items:center;justify-content:center;gap:.55em;
-  font-family:"Noto Serif Hebrew",serif;font-weight:700;font-size:.98rem;letter-spacing:.01em;
+  font-family:"Anek Devanagari",sans-serif;font-weight:700;font-size:.98rem;letter-spacing:.01em;
   padding:.92em 1.6em;border-radius:999px;border:2px solid transparent;cursor:pointer;
   transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),color .22s var(--ease),border-color .22s var(--ease);
   line-height:1;white-space:nowrap;
@@ -106,7 +106,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .btn:hover svg:last-child{transform:translateX(3px)}
 
 /* ---------- Top utility bar ---------- */
-.topbar{background:var(--slate-deep);color:#d3d9e0;font-size:.82rem;font-weight:500;letter-spacing:.01em;font-family:"Noto Serif Hebrew",serif}
+.topbar{background:var(--slate-deep);color:#d3d9e0;font-size:.82rem;font-weight:500;letter-spacing:.01em;font-family:"Anek Devanagari",sans-serif}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px;padding-top:6px;padding-bottom:6px}
 .topbar .tb-item{display:inline-flex;align-items:center;gap:.5em}
 .topbar svg{width:15px;height:15px;opacity:.85}
@@ -125,9 +125,9 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .brand-mark{width:44px;height:44px;flex:none;border-radius:11px;background:linear-gradient(150deg,var(--slate),var(--slate-soft));display:grid;place-items:center;box-shadow:var(--shadow-sm)}
 .brand-mark svg{width:25px;height:25px}
 .brand-text{display:flex;flex-direction:column;line-height:1}
-.brand-name{font-family:"Chela One",serif;font-weight:400;font-size:1.42rem;letter-spacing:.01em;color:var(--slate)}
+.brand-name{font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.5rem;letter-spacing:.02em;color:var(--slate)}
 .brand-name b{color:var(--oak);font-weight:400}
-.brand-tag{font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px;font-family:"Noto Serif Hebrew",serif}
+.brand-tag{font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px;font-family:"Anek Devanagari",sans-serif}
 
 .main-nav{display:flex;align-items:center;gap:4px}
 .main-nav a{padding:.55em .8em;border-radius:8px;font-weight:600;font-size:.94rem;color:var(--slate);transition:background .15s ease,color .15s ease;white-space:nowrap}
@@ -135,7 +135,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .header-cta{display:flex;align-items:center;gap:14px}
 .header-phone{display:inline-flex;flex-direction:column;align-items:flex-end;line-height:1.1;flex:none}
 .header-phone .hp-label{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);white-space:nowrap}
-.header-phone .hp-num{font-family:"Chela One",serif;font-weight:400;font-size:1.2rem;color:var(--slate);white-space:nowrap;margin-top:2px}
+.header-phone .hp-num{font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.2rem;color:var(--slate);white-space:nowrap;margin-top:2px}
 .header-phone:hover .hp-num{color:var(--oak)}
 @media(max-width:1180px){.header-phone{display:none}}
 
@@ -202,7 +202,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .hero-badge{display:flex;flex-direction:column;gap:3px;position:relative}
 .hero-badge+.hero-badge{padding-left:clamp(18px,3vw,34px)}
 .hero-badge+.hero-badge::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:rgba(255,255,255,.18)}
-.hero-badge .hb-num{font-family:"Chela One",serif;font-weight:400;font-size:1.7rem;color:#fff;line-height:1}
+.hero-badge .hb-num{font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.7rem;color:#fff;line-height:1}
 .hero-badge .hb-num .stars{color:var(--gold);font-size:1.02rem}
 .hero-badge .hb-label{font-size:.78rem;color:#cbd2da;font-weight:600;letter-spacing:.02em}
 @media(max-width:440px){
@@ -219,7 +219,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .trust-item:hover{background:var(--ivory-2)}
 .trust-item:last-child{border-right:none}
 .trust-item svg{width:29px;height:29px;color:var(--oak);flex:none}
-.trust-item .ti-top{font-family:"Chela One",serif;font-weight:400;font-size:1.04rem;color:var(--slate);line-height:1.1}
+.trust-item .ti-top{font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.04rem;color:var(--slate);line-height:1.1}
 .trust-item .ti-sub{font-size:.76rem;color:var(--muted);font-weight:600}
 .trust-item .stars{color:var(--gold)}
 @media(max-width:900px){
@@ -250,7 +250,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .svc-media{aspect-ratio:16/10;overflow:hidden;position:relative}
 .svc-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .svc-card:hover .svc-media img{transform:scale(1.06)}
-.svc-tag{position:absolute;left:14px;top:14px;background:rgba(36,44,54,.82);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.4em .8em;border-radius:999px;backdrop-filter:blur(4px);font-family:"Noto Serif Hebrew",serif}
+.svc-tag{position:absolute;left:14px;top:14px;background:rgba(36,44,54,.82);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.4em .8em;border-radius:999px;backdrop-filter:blur(4px);font-family:"Anek Devanagari",sans-serif}
 .svc-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
 .svc-body h3{color:var(--slate)}
 .svc-body p{color:var(--muted);font-size:.98rem}
@@ -266,14 +266,14 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .owners-photo img{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);object-fit:cover;aspect-ratio:4/5}
 .owners-photo::after{content:"";position:absolute;inset:0;border-radius:var(--radius-lg);box-shadow:inset 0 0 0 1px rgba(58,70,83,.1);pointer-events:none}
 .owners-badge{position:absolute;right:-14px;bottom:-14px;background:linear-gradient(150deg,var(--oak-soft),var(--oak-dark));color:#fff;border-radius:18px;padding:16px 20px;box-shadow:0 20px 40px -18px rgba(140,96,38,.85);text-align:center;max-width:200px;border:1px solid rgba(255,255,255,.18)}
-.owners-badge .ob-num{font-family:"Chela One",serif;font-weight:400;font-size:1.8rem;line-height:1.05}
+.owners-badge .ob-num{font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.8rem;line-height:1.05}
 .owners-badge .ob-label{font-size:.72rem;font-weight:600;letter-spacing:.03em;opacity:.94;margin-top:3px}
 @media(max-width:520px){.owners-badge{right:12px;bottom:-10px;padding:12px 15px}.owners-badge .ob-num{font-size:1.4rem}}
 .owners-copy h2{margin-bottom:8px}
 .owners-copy p{color:var(--muted);margin-top:16px}
 .owners-sign{margin-top:22px;display:flex;align-items:center;gap:14px}
-.owners-sign .os-avatar{width:46px;height:46px;border-radius:50%;background:var(--oak);color:#fff;display:grid;place-items:center;font-family:"Chela One",serif;font-weight:400;font-size:1.1rem;flex:none}
-.owners-sign .os-names{font-family:"Chela One",serif;font-weight:400;color:var(--slate);font-size:1.12rem}
+.owners-sign .os-avatar{width:46px;height:46px;border-radius:50%;background:var(--oak);color:#fff;display:grid;place-items:center;font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.1rem;flex:none}
+.owners-sign .os-names{font-family:"Suranna",Georgia,serif;font-weight:400;color:var(--slate);font-size:1.12rem}
 .owners-sign .os-role{font-size:.82rem;color:var(--muted);font-weight:600}
 
 /* ---------- Work strip ---------- */
@@ -294,11 +294,11 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 @media(max-width:900px){.reviews-grid{grid-template-columns:1fr}}
 .review-card{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.13);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:14px;backdrop-filter:blur(2px);box-shadow:0 24px 48px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.08);transition:transform .35s var(--ease),border-color .35s var(--ease),background .35s var(--ease)}
 .testimonials .review-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.26);background:linear-gradient(160deg,rgba(255,255,255,.13),rgba(255,255,255,.05))}
-.review-card::before{content:"\201C";position:absolute;top:6px;right:20px;font-family:"Chela One",serif;font-size:4rem;line-height:1;color:var(--oak-soft);opacity:.2;pointer-events:none}
+.review-card::before{content:"\201C";position:absolute;top:6px;right:20px;font-family:"Suranna",Georgia,serif;font-size:4rem;line-height:1;color:var(--oak-soft);opacity:.2;pointer-events:none}
 .review-stars{color:var(--gold);letter-spacing:.08em;font-size:1.05rem;position:relative}
 .review-text{color:#eef1f5;font-size:1rem;line-height:1.62;flex:1}
 .review-who{display:flex;align-items:center;gap:12px;margin-top:2px}
-.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--oak);color:#fff;display:grid;place-items:center;font-family:"Chela One",serif;font-weight:400;flex:none}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:var(--oak);color:#fff;display:grid;place-items:center;font-family:"Suranna",Georgia,serif;font-weight:400;flex:none}
 .review-name{font-weight:700;color:#fff;font-size:.95rem}
 .review-meta{font-size:.78rem;color:#a9b3bf}
 .reviews-foot{margin-top:34px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;color:#cdd4dc;font-weight:600}
@@ -320,7 +320,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .contact-row .cr-ico{width:44px;height:44px;border-radius:12px;background:linear-gradient(150deg,var(--slate-soft),var(--slate-deep));color:#fff;display:grid;place-items:center;flex:none}
 .contact-row .cr-ico svg{width:22px;height:22px}
 .contact-row .cr-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:700}
-.contact-row .cr-main{font-family:"Chela One",serif;font-weight:400;color:var(--slate);font-size:1.16rem;line-height:1.25}
+.contact-row .cr-main{font-family:"Suranna",Georgia,serif;font-weight:400;color:var(--slate);font-size:1.16rem;line-height:1.25}
 .contact-row a.cr-main:hover{color:var(--oak)}
 .contact-row .cr-sub{font-size:.86rem;color:var(--muted)}
 .contact-actions{display:flex;gap:12px;flex-wrap:wrap}
@@ -330,7 +330,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 .faq{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow .3s var(--ease),border-color .3s var(--ease)}
 .faq:hover{border-color:var(--line-strong)}
 .faq.open{box-shadow:var(--shadow);border-color:var(--line-strong)}
-.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:"Chela One",serif;font-weight:400;font-size:1.12rem;color:var(--slate)}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:"Suranna",Georgia,serif;font-weight:400;font-size:1.12rem;color:var(--slate)}
 .faq-q .faq-ico{width:30px;height:30px;border-radius:8px;background:var(--ivory);display:grid;place-items:center;flex:none;transition:background .2s ease}
 .faq-q .faq-ico svg{width:18px;height:18px;color:var(--oak);transition:transform .3s ease}
 .faq.open .faq-q .faq-ico{background:var(--oak)}
@@ -354,7 +354,7 @@ section{padding:clamp(60px,8.5vw,116px) 0}
 @media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
 .footer-brand .brand-name{color:#fff}
 .footer-brand p{margin-top:16px;font-size:.92rem;color:#a9b3bf;max-width:36ch}
-.footer-col h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:16px;font-family:"Noto Serif Hebrew",serif;font-weight:700}
+.footer-col h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:16px;font-family:"Anek Devanagari",sans-serif;font-weight:700}
 .footer-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
 .footer-col a,.footer-col li{font-size:.94rem;color:#c8cfd7}
 .footer-col a:hover{color:#fff}

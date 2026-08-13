@@ -8,7 +8,7 @@ Tier 1 "Clean Slate" demo build for **Firm Foundation Flooring** (Pinellas Park,
 - **Rating:** 5.0 ★ · 21 Google reviews (shown — ≥4.4)
 - **Hours:** Mon–Fri 8 AM – 6 PM; Sat & Sun closed
 - **Owner (from genuine reviews):** Mike
-- **Fonts:** Chela One (display) + Noto Serif Hebrew (body)
+- **Fonts:** Suranna (display) + Anek Devanagari (body)
 - **Palette:** warm oak plank · firm slate gray · clean ivory
 - **Live:** https://wilsoninnovations.net/firm-foundation-flooring/
 
